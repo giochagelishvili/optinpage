@@ -43,7 +43,7 @@
   
   body {
       padding: 2rem;
-      background-color: #f2f3eb;
+      background-color: #f2f3eb !important;
   }
   
   header {
