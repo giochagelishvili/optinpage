@@ -24,7 +24,7 @@ p {
     font-size: 1.4rem;
 }
 
-button, .underline, #arrow-left, #arrow-right {
+button, .underline, .arrow-left, .arrow-right {
     cursor: pointer;
 }
   
@@ -420,7 +420,7 @@ footer {
         bottom: 2rem;
     }
 
-    #arrow-left, #arrow-right {
+    .arrow-left, .arrow-right {
         font-size: 3.2rem;
         transition: 0.2s;
     }
@@ -543,7 +543,7 @@ footer {
         margin: 2rem 0;
     }
 
-    #arrow-left:hover, #arrow-right:hover {
+    .arrow-left:hover, .arrow-right:hover {
         background-color: #f2f3eb;
         color:#101010;
         border-color:#101010;

@@ -28,7 +28,7 @@ $(document).ready(function() {
         fadeInData(counter, jsonData);
     });
   
-    $("#arrow-left").on('click', function() {
+    $(".arrow-left").on('click', function() {
         // Load JSON data from the external file
         $.getJSON('data/data.json', function(data) {
             var jsonData = data;
@@ -44,7 +44,7 @@ $(document).ready(function() {
         });
     });
 
-    $("#arrow-right").on('click', function() {
+    $(".arrow-right").on('click', function() {
         // Load JSON data from the external file
         $.getJSON('data/data.json', function(data) {
             var jsonData = data;
