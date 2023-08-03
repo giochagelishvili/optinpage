@@ -364,7 +364,7 @@ footer {
     }
 
     .tablet {
-        display: block;
+        display: block !important;
     }
 
     .home-heading {
