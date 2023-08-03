@@ -347,7 +347,7 @@ footer {
     text-align: center;
 }
 
-.tablet, .no-desktop {
+.tablet, .desktop {
     display: none !important;
 }
 
@@ -430,6 +430,14 @@ footer {
 /* DESKTOP SCREEN BREAKPOINT */
 /* ------------------------ */
 @media screen and (min-width: 1280px) {
+    .no-desktop {
+        display: none;
+    }
+
+    .desktop {
+        display: flex !important;
+    }
+
     .padding-container {
         padding: 2rem 4rem;
     }
