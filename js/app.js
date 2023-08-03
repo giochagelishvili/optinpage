@@ -1,6 +1,14 @@
 $(document).ready(function() {
     counter = 0;
 
+    $(".open-menu-icon").on('click', function() {
+        $('.nav-menu').slideToggle(300);
+    });
+
+    $(".nav-link").on('click', function() {
+        alert('This would take you to another page');
+    });
+
     // Function to smoothly fade in the data
     function fadeInData(index, data) {
       $('.customer-comment').fadeOut('slow', function() {
