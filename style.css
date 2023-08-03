@@ -42,8 +42,11 @@ html {
 }
   
 body {
-    padding: 2rem;
     background-color: #f2f3eb !important;
+}
+
+.padding-container {
+    padding: 2rem;
 }
   
 header {
@@ -312,4 +315,17 @@ input {
     border: 1px solid white;
     border-radius: 50%;
     padding: 0.5rem;
+}
+
+footer {
+    background-color: #046865;
+    padding: 1.5rem;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.footer-text {
+    font-size: 1.2rem;
+    color: #f2f3eb;
+    text-align: center;
 }

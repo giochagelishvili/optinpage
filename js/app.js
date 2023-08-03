@@ -5,18 +5,18 @@ $(document).ready(function() {
         $('.nav-menu').slideToggle(300);
     });
 
-    $(".nav-link").on('click', function() {
+    $(".nav-link, .underline, button").on('click', function() {
         alert('This would take you to another page');
     });
 
     // Function to smoothly fade in the data
     function fadeInData(index, data) {
-      $('.customer-comment').fadeOut('slow', function() {
-        $(this).text(data[index].comment).fadeIn('slow');
+      $('.customer-comment').fadeOut('150', function() {
+        $(this).text(data[index].comment).fadeIn('150');
       });
   
-      $('.customer-name').fadeOut('slow', function() {
-        $(this).text(data[index].name).fadeIn('slow');
+      $('.customer-name').fadeOut('150', function() {
+        $(this).text(data[index].name).fadeIn('150');
       });
     }
 
