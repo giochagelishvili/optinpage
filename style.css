@@ -471,8 +471,8 @@ footer {
     }
 
     .nav-link:hover, .underline:hover {
-        color: #e2b6cd;
-        border-color:#e2b6cd;
+        color:#ED9121;
+        border-color: #ED9121;
     }
 
     .header-logo {
