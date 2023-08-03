@@ -33,9 +33,9 @@
                 </div>
                 <nav>
                     <ul class="nav-menu flex-column">
-                        <li class="nav-link">Home</li>
-                        <li class="nav-link">About</li>
-                        <li class="nav-link">Contact</li>
+                        <li><a href='#' class="nav-link">Home</a></li>
+                        <li><a href='#' class="nav-link">About</a></li>
+                        <li><a href='#' class="nav-link">Contact</a></li>
                     </ul>
                 </nav>
             </header>
@@ -51,6 +51,13 @@
                             WITH MY LIST OF FOODS <br>
                             PACKED WITH SIX <br>
                             ESSENTIAL NUTRIENTS
+                            <div class="border"></div>
+                        </h1>
+
+                        <h1 class="home-heading tablet">
+                            SAY GOODBYE TO BRITTLE BONES <br>
+                            WITH MY LIST OF FOODS PACKED WITH <br>
+                            SIX ESSENTIAL NUTRIENTS
                             <div class="border"></div>
                         </h1>
             
@@ -70,7 +77,7 @@
                         </ul>
                     </div>
             
-                    <form action="" class="flex-column">
+                    <form action="" class="flex-column no-desktop">
                         <input placeholder="Full Name" type="text" name="name-input">
                         <input placeholder="Email" type="email" name="email-input">
                         <button type="submit" class="get-your-list-button" class="flex-row">
@@ -79,8 +86,19 @@
                             !
                         </button>
                     </form>
+                    <div class="customer-comment-container flex-column">
+                        <p class="customer-comment">
+    
+                        </p>
+                        <h2 class="customer-name"></h2>
+    
+                        <div class="customer-experience-btn-container flex-row desktop">
+                            <span class="material-symbols-outlined" id="arrow-left">keyboard_arrow_left</span>
+                            <span class="material-symbols-outlined" id="arrow-right">keyboard_arrow_right</span>
+                        </div>
+                    </div>
                 </section>
-                <section id="active-users-section">
+                <section id="product-section" class="flex-column">
                     <div class="divider bookmark flex-row">
                         <i class="fa-regular fa-bookmark"></i>
                         <div class="border"></div>
@@ -91,26 +109,37 @@
                     </h1>
             
                     <p id="active-users-p">
-                        <span>Active users</span> are following osteoporosis trainer to strengthen their bones and live happier lives.
+                        <span class="underline">Active users</span> are following osteoporosis trainer to strengthen their bones and live happier lives.
                     </p>
-                </section>
-                <section id="product-section" class="flex-column">
-                    <div class="poster-container">
-                        <img id="poster" src="img/poster.webp" alt="">
-                        <button id="poster-button" type="submit" class="get-your-list-button flex-row">
-                            GET YOUR LIST
-                            <span class="now"> TODAY </span> !
-                        </button>
-                    </div>
-                    <div class="customer-comment-container flex-column">
-                        <p class="customer-comment">
-    
-                        </p>
-                        <h2 class="customer-name"></h2>
-    
-                        <div class="customer-experience-btn-container flex-row">
-                            <span class="material-symbols-outlined" id="arrow-left">keyboard_arrow_left</span>
-                            <span class="material-symbols-outlined" id="arrow-right">keyboard_arrow_right</span>
+                    <div class="grid-container">
+                        <div class="poster-container">
+                            <img id="poster" src="img/poster.webp" alt="">
+                            <button id="poster-button" type="submit" class="get-your-list-button flex-row">
+                                GET YOUR LIST
+                                <span class="now"> TODAY </span> !
+                            </button>
+                        </div>
+                        <div class="container">
+                            <div class="customer-comment-container flex-column no-desktop">
+                                <p class="customer-comment">
+            
+                                </p>
+                                <h2 class="customer-name"></h2>
+            
+                                <div class="customer-experience-btn-container flex-row">
+                                    <span class="material-symbols-outlined" id="arrow-left">keyboard_arrow_left</span>
+                                    <span class="material-symbols-outlined" id="arrow-right">keyboard_arrow_right</span>
+                                </div>
+                            </div>
+                            <form action="" class="flex-column desktop">
+                                <input placeholder="Full Name" type="text" name="name-input">
+                                <input placeholder="Email" type="email" name="email-input">
+                                <button type="submit" class="get-your-list-button" class="flex-row">
+                                    YES, GIVE ME MY LIST 
+                                    <span class="now">NOW</span> 
+                                    !
+                                </button>
+                            </form>
                         </div>
                     </div>
                 </section>

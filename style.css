@@ -12,9 +12,20 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* 1rem = 10px */
+html {
+    font-family: 'Manrope', sans-serif;
+    font-size: 62.5%;
+    color: #101010;
+}
   
 p {
     font-size: 1.4rem;
+}
+
+button, .underline, #arrow-left, #arrow-right {
+    cursor: pointer;
 }
   
 /* ---------------- */
@@ -28,27 +39,31 @@ p {
     display: flex;
     flex-direction: column;
 }
-  
-/* Syncopate font */
+
+.underline {
+    text-decoration: underline;
+}
+
+/* ------------- */
+/* CUSTOM FONTS */
+/* ----------- */
+
 .syncopate {
     font-family: 'Syncopate', sans-serif;
-}
-  
-/* 1rem = 10px */
-html {
-    font-family: 'Manrope', sans-serif;
-    font-size: 62.5%;
-    color: #101010;
 }
   
 body {
     background-color: #f2f3eb !important;
 }
 
+/* Add padding to header and main */
 .padding-container {
     padding: 2rem;
 }
-  
+
+/* -------------- */
+/* HEADER STYLES */
+/* ------------ */
 header {
     align-items: center;
     justify-content: space-between;
@@ -80,19 +95,24 @@ nav {
     display: none;
 }
 
-.nav-link {
-    font-size: 1.8rem;
-    text-transform: uppercase;
-    color: white;
-
-    border-bottom: 1px dashed #f2f3eb;
-
+.nav-menu li {
     list-style: none;
     margin-top: 1.5rem;
 }
 
-.nav-link:first-of-type {
+.nav-menu li:first-of-type {
     margin: 0;
+}
+
+.nav-link {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+
+    border-bottom: 1px dashed #f2f3eb;
+
+    
 }
   
 .header-logo {
@@ -103,23 +123,28 @@ nav {
     align-items: center;
     gap: 1rem;
 }
-  
+ 
+/* Bone icon styles */
 .header-logo .fa-bone {
     color: #e2b6cd;
     transform: rotate(10deg);
 }
   
+/* Hamburger menu icon */
 .open-menu-icon {
     font-size: 3.6rem;
     color: #f2f3eb;
 }
-  
+
+/* ------------ */
+/* MAIN STYLES */
+/* ---------- */
 #bone-strengthener, .home-heading,
 .home-heading-p,
 #active-users, #active-users-p {
     font-family: 'Manrope', sans-serif;
 }
-  
+
 #bone-strengthener {
     font-size: 1.2rem;
     text-transform: uppercase;
@@ -132,12 +157,13 @@ nav {
     width: 18rem;
     margin: 2rem 0;
 }
-  
+
 .home-heading {
     font-size: 2.8rem;
     line-height: 5rem;
 }
-  
+
+/* Pink rectangle under headline */
 .border {
     width: 23rem;
     height: 20px;
@@ -147,16 +173,13 @@ nav {
     margin-left: 1.5rem;
     margin-top: -2.2rem;
 }
-
-.underline {
-    text-decoration: underline;
-}
   
 .home-heading-p {
     margin-top: 2.5rem;
     font-size: 1.8rem;
 }
 
+/* Cheat sheet list */
 ul {
     width: 80%;
     margin: 0 auto;
@@ -168,6 +191,7 @@ li {
     margin-top: 1rem;
 }
 
+/* Name and Email form */
 form {
     width: 80%;
     margin: 2rem auto 0 auto;
@@ -219,10 +243,6 @@ input {
     font-weight: 700;
 }
   
-#active-users-section {
-    margin-top: 5rem;
-}
-  
 .bookmark {
     align-items: center;
     justify-content: space-between;
@@ -246,10 +266,6 @@ input {
     margin-top: 2rem;
 }
   
-#active-users-p {
-    margin-top: 1rem;
-}
-  
 #active-users-p span {
     font-weight: 700;
     text-decoration: underline;
@@ -261,6 +277,7 @@ input {
 }
 
 #poster {
+    margin-top: 2rem;
     width: 100%;
     border: 5px solid #ffffff;
 
@@ -328,4 +345,207 @@ footer {
     font-size: 1.2rem;
     color: #f2f3eb;
     text-align: center;
+}
+
+.tablet, .no-desktop {
+    display: none !important;
+}
+
+/* ------------------------- */
+/* TABLET SCREEN BREAKPOINT */
+/* ----------------------- */
+@media screen and (min-width: 768px) {
+    .padding-container {
+        padding: 4rem;
+    }
+
+    .home-heading {
+        display: none;
+    }
+
+    .tablet {
+        display: block;
+    }
+
+    .home-heading {
+        font-size: 3.6rem;
+    }
+
+    .home-heading-p {
+        font-size: 2.2rem;
+    }
+
+    li {
+        font-size: 2rem;
+    }
+
+    input {
+        font-size: 2rem;
+        width: 60%;
+        padding: 1rem 0 1rem 2rem;
+        margin: 0 auto;
+    }
+
+    .get-your-list-button {
+        font-size: 2rem;
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    #active-users-p {
+        font-size: 1.6rem;
+    }
+
+    .poster-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #poster {
+        width: 70%;
+    }
+
+    #poster-button {
+        width: 50%;
+    }
+
+    .customer-comment-container {
+        width: 50%;
+        padding: 2rem 2rem 8rem 2rem;
+        margin: 0 auto;
+    }
+
+    .customer-experience-btn-container {
+        bottom: 2rem;
+    }
+
+    #arrow-left, #arrow-right {
+        font-size: 3.2rem;
+        transition: 0.2s;
+    }
+}
+
+/* -------------------------- */
+/* DESKTOP SCREEN BREAKPOINT */
+/* ------------------------ */
+@media screen and (min-width: 1280px) {
+    .padding-container {
+        padding: 2rem 4rem;
+    }
+
+    header {
+        flex-direction: row !important;
+    }
+
+    .open-menu-icon {
+        display: none;
+    }
+
+    .nav-bar {
+        padding: 2rem 4rem;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+
+        padding: 2rem 4rem;
+    }
+
+    .nav-menu li {
+        margin: 0;
+    }
+
+    .nav-link {
+        font-size: 2.4rem;
+        margin: 0;
+        transition: 0.2s;
+    }
+
+    .underline {
+        transition: 0.2s;
+    }
+
+    .nav-link:hover, .underline:hover {
+        color: #e2b6cd;
+        border-color:#e2b6cd;
+    }
+
+    .header-logo {
+        font-size: 2.2rem;
+    }
+
+    .fa-bone {
+        font-size: 3.2rem;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    #bone-strengthener {
+        font-size: 1.4rem;
+        padding: 0.5rem 1.2rem;
+    }
+
+    ul {
+        margin-left: 3.5rem;
+    }
+
+    form {
+        margin: 0;
+        width: 100%;
+        align-items: flex-end;
+    }
+
+    input {
+        margin: 0;
+        width: 90%;
+    }
+
+    .get-your-list-button {
+        width: 90%;
+        margin: 0;
+    }
+    
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 2rem;
+    }
+
+    #poster {
+        width: 100%;
+        margin: 0;
+    }
+
+    #poster-button {
+        display: none;
+    }
+
+    .customer-comment-container {
+        width: 70%;
+        min-height: 20rem;
+        margin: 2rem 0;
+    }
+
+    #arrow-left:hover, #arrow-right:hover {
+        background-color: #f2f3eb;
+        color:#101010;
+        border-color:#101010;
+    }
+
+    button {
+        transition: 0.2s;
+    }
+
+    button:hover {
+        background-color:#046865;
+    }
 }
